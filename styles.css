@@ -1,0 +1,57 @@
+/* Light and Dark mode */
+:root {
+  --bg-color: white;
+  --text-color: black;
+  --link-color: blue;
+}
+
+body.dark-mode {
+  --bg-color: #333;
+  --text-color: #f0f0f0;
+  --link-color: #9acd32;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a {
+  margin: 0 15px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: var(--link-color);
+}
+
+.content {
+  display: none;
+}
+
+.content.active {
+  display: block;
+}
+
+.toggle-button {
+  margin: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  background-color: var(--link-color);
+  color: var(--bg-color);
+  border-radius: 5px;
+}
+
+/* Main Content */
+nav a {
+  margin: 0 15px;
+  cursor: pointer;
+  text-decoration: underline;
+  color: blue;
+}
+.content {
+  display: none;
+}
+.content.active {
+  display: block;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Development Toolkit</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <button class="toggle-button" onclick="toggleMode()">
+      Toggle Dark/Light Mode
+    </button>
+    <nav>
+      <button>
+        <a href="#home" onclick="navigate('home')">Design Inspiration</a>
+      </button>
+      <button>
+        <a href="#about" onclick="navigate('about')">Design Tools</a>
+      </button>
+      <button>
+        <a href="#contact" onclick="navigate('contact')">Learning Resources</a>
+        ~
+      </button>
+    </nav>
+    <div id="home" class="content active">
+      <h1>Design Inspiration</h1>
+      <p>Welcome to the home page!</p>
+    </div>
+    <div id="about" class="content">
+      <h1>Design Tools</h1>
+      <p>Learn more about us on this page.</p>
+    </div>
+    <div id="contact" class="content">
+      <h1>Learning Resources</h1>
+      <p>Get in touch with us here.</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
