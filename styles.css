@@ -1,14 +1,14 @@
 /* Light and Dark mode */
 :root {
-  --bg-color: white;
-  --text-color: black;
-  --link-color: blue;
-}
-
-body.dark-mode {
   --bg-color: #333;
   --text-color: #f0f0f0;
   --link-color: #9acd32;
+}
+
+body.dark-mode {
+  --bg-color: white;
+  --text-color: black;
+  --link-color: blue;
 }
 
 body {
@@ -54,4 +54,8 @@ nav a {
 }
 .content.active {
   display: block;
+}
+
+.icon-size {
+  height: 300px;
 }
