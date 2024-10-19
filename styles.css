@@ -17,12 +17,14 @@ body {
   transition: background-color 0.3s, color 0.3s;
 }
 
-nav a {
-  margin: 0 15px;
-  cursor: pointer;
-  text-decoration: underline;
-  color: var(--link-color);
+.navbar {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+
 }
+
+
 
 .content {
   display: none;
@@ -43,19 +45,44 @@ nav a {
 }
 
 /* Main Content */
-nav a {
-  margin: 0 15px;
-  cursor: pointer;
-  text-decoration: underline;
-  color: blue;
-}
-.content {
-  display: none;
-}
-.content.active {
-  display: block;
-}
+
 
 .icon-size {
   height: 300px;
+}
+
+
+.card {
+  padding: 20px;
+  border-radius: 19px;
+background: #4b4949;
+box-shadow: inset 7px 7px 22px #413f3f,
+            inset -7px -7px 22px #565353;
+            
+ 
+  
+}
+
+.card-text{
+  text-decoration: none;
+  color: whitesmoke;
+  margin: 10px;
+}
+
+.card-title{
+  margin-top: 20px
+}
+
+.card-image {
+  height: 100%;
+  width: 100%;
+}
+
+.card-button{
+  background-color: #0c053e;
+  width: 30%;
+  text-decoration: none;
+  color: #f0f0f0;
+  padding: 10px;
+  border-radius: 5px;
 }

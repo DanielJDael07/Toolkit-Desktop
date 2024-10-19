@@ -13,159 +13,93 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <button class="toggle-button" onclick="toggleMode()">
-      Toggle Dark/Light Mode
+<nav class="navbar navbar-expand-lg bg-body-tertiary mt-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Toolkit</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <nav>
-      <button>
-        <a href="#home" onclick="navigate('home')">Tools and Frameworks </a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            My Tools
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#home" onclick="navigate('home')">Tools and Frameworks</a></li>
+            <li><a class="dropdown-item" href="#about" onclick="navigate('about')">Design Inspiration</a></li>
+            <li><a class="dropdown-item" href="#contact" onclick="navigate('contact')">Learning Resources</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+      <button class="toggle-button" onclick="toggleMode()">
+        Toggle Dark/Light Mode
       </button>
-      <button>
-        <a href="#about" onclick="navigate('about')">Design Inspiration</a>
-      </button>
-      <button>
-        <a href="#contact" onclick="navigate('contact')">Learning Resources</a>
-        ~
-      </button>
-    </nav>
+    </div>
+  </div>
+</nav>
+
+
 
     <div class="container">
       <div id="home" class="content active">
-        <h1>Web Tools and Frameworks</h1>
-        <h3>Web Tools</h3>
 
-        <div class="row g-3">
-          <div class="col-md-4 col-lg-3">
-            <div class="card  h-100" style="width: 18rem">
-              <a href="https://getbootstrap.com/docs/5.3/" target="_blank">
-                <img
-                  src="Images/Bootstrap Icon.JPG"
-                  class="card-img-top"
-                  alt="Bootstrap Logo" height="200px"
-                  width="200px"
-              /></a>
 
-              <div class="card-body">
-                <p class="card-text">
-                  <a
-                    href="https://getbootstrap.com/docs/5.3/"
-                    target="_blank"
-                    class="text-dark"
-                    >Bootstrap (Latest Version)</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3">
-            <div class="card  h-100" style="width: 18rem">
-              <a href="https://tailwindcss.com/" target="_blank">
-                <img
-                  src="Images/TailwindIcon.png"
-                  class="card-img-top"
-                  alt="Bootstrap Logo" height="200px"
-                  width="200px"
-              /></a>
+        <div class="row g-3 main-content">
+          <h3 class="mt-5 pt-5">Web Tools</h3>
 
-              <div class="card-body">
-                <p class="card-text">
-                  <a
-                    href="https://tailwindcss.com/"
-                    target="_blank"
-                    class="text-dark"
-                    >Tailwind (Latest Version)</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3">
-            <div class="card" style="width: 18rem">
-              <a href="https://getbootstrap.com/docs/5.3/" target="_blank">
-                <img
-                  src="Images/Bootstrap Icon.JPG"
-                  class="card-img-top"
-                  alt="Bootstrap Logo"
-              /></a>
 
-              <div class="card-body">
-                <p class="card-text">
-                  <a
-                    href="https://getbootstrap.com/docs/5.3/"
-                    target="_blank"
-                    class="text-dark"
-                    >Bootstrap (Latest Version)</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-3">
-            <div class="card" style="width: 18rem">
-              <a href="https://getbootstrap.com/docs/5.3/" target="_blank">
-                <img
-                  src="Images/Bootstrap Icon.JPG"
-                  class="card-img-top"
-                  alt="Bootstrap Logo"
-              /></a>
-
-              <div class="card-body">
-                <p class="card-text">
-                  <a
-                    href="https://getbootstrap.com/docs/5.3/"
-                    target="_blank"
-                    class="text-dark"
-                    >Bootstrap (Latest Version)</a
-                  >
-                </p>
-              </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="" class="card-text">
+                <img src="/Images/UIVerse.io.PNG" alt="UiVerse"
+                 class="card-image ">
+                <h3 class="card-title">Uiverse.io</h3>
+                <p class="card-description">The largest library of Open-Source UI elements. Explore a vast collection of beautiful UI elements, including buttons, checkboxes, cards, and more.</p>
+                <a href="#" class="card-button text-center">Visit</a>
+              </a>
+             
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3">
-            <div class="card" style="width: 18rem">
-              <a href="https://getbootstrap.com/docs/5.3/" target="_blank">
-                <img
-                  src="Images/Bootstrap Icon.JPG"
-                  class="card-img-top"
-                  alt="Bootstrap Logo"
-              /></a>
-
-              <div class="card-body">
-                <p class="card-text">
-                  <a
-                    href="https://getbootstrap.com/docs/5.3/"
-                    target="_blank"
-                    class="text-dark"
-                    >Bootstrap (Latest Version)</a
-                  >
-                </p>
-              </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="" class="card-text">
+                <img src="/Images/Buttons.io.PNG" alt="Buttons.io"
+                 class="card-image ">
+                <h3 class="card-title">Buttons.io</h3>
+                <p class="card-description">Collection of 100+ beautiful, customizable buttons for your next project. Get the code you need to enhance your web projects with stylish, functional buttons.</p>
+                <a href="#" class="card-button text-center">Visit</a>
+              </a>
+             
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a href="" class="card-text">
+                <img src="/Images/Neumorphism.io.PNG" alt="UiVerse"
+                 class="card-image ">
+                <h3 class="card-title">Neumorphism.io</h3>
+                <p class="card-description">This Neumorphism generator creates 3D UI designs with adjustable settings and outputs CSS code for easy use in web projects.</p>
+                <a href="#" class="card-button text-center">Visit</a>
+              </a>
+             
             </div>
           </div>
 
-          <div class="col-md-4 col-lg-3">
-            <div class="card" style="width: 18rem">
-              <a href="https://getbootstrap.com/docs/5.3/" target="_blank">
-                <img
-                  src="Images/Bootstrap Icon.JPG"
-                  class="card-img-top"
-                  alt="Bootstrap Logo"
-              /></a>
 
-              <div class="card-body">
-                <p class="card-text">
-                  <a
-                    href="https://getbootstrap.com/docs/5.3/"
-                    target="_blank"
-                    class="text-dark"
-                    >Bootstrap (Latest Version)</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
 
+         
         <h3>Language and Frameworks Documentation</h3>
 
         <div class="row g-3">
@@ -214,64 +148,44 @@
             </div>
           </div>
           <div class="col-md-4 col-lg-3">
-            <div class="card" style="width: 18rem">
-              <a href="https://getbootstrap.com/docs/5.3/" target="_blank">
+            <div class="card  h-100" style="width: 18rem">
+              <a href="https://tailwindcss.com/" target="_blank">
                 <img
-                  src="Images/Bootstrap Icon.JPG"
+                  src="Images/TailwindIcon.png"
                   class="card-img-top"
-                  alt="Bootstrap Logo"
+                  alt="Bootstrap Logo" height="200px"
+                  width="200px"
               /></a>
 
               <div class="card-body">
                 <p class="card-text">
                   <a
-                    href="https://getbootstrap.com/docs/5.3/"
+                    href="https://tailwindcss.com/"
                     target="_blank"
                     class="text-dark"
-                    >Bootstrap (Latest Version)</a
+                    >Tailwind (Latest Version)</a
                   >
                 </p>
               </div>
             </div>
           </div>
           <div class="col-md-4 col-lg-3">
-            <div class="card" style="width: 18rem">
-              <a href="https://getbootstrap.com/docs/5.3/" target="_blank">
+            <div class="card  h-100" style="width: 18rem">
+              <a href="https://tailwindcss.com/" target="_blank">
                 <img
-                  src="Images/Bootstrap Icon.JPG"
+                  src="Images/TailwindIcon.png"
                   class="card-img-top"
-                  alt="Bootstrap Logo"
+                  alt="Bootstrap Logo" height="200px"
+                  width="200px"
               /></a>
 
               <div class="card-body">
                 <p class="card-text">
                   <a
-                    href="https://getbootstrap.com/docs/5.3/"
+                    href="https://tailwindcss.com/"
                     target="_blank"
                     class="text-dark"
-                    >Bootstrap (Latest Version)</a
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-lg-3">
-            <div class="card" style="width: 18rem">
-              <a href="https://getbootstrap.com/docs/5.3/" target="_blank">
-                <img
-                  src="Images/Bootstrap Icon.JPG"
-                  class="card-img-top"
-                  alt="Bootstrap Logo"
-              /></a>
-
-              <div class="card-body">
-                <p class="card-text">
-                  <a
-                    href="https://getbootstrap.com/docs/5.3/"
-                    target="_blank"
-                    class="text-dark"
-                    >Bootstrap (Latest Version)</a
+                    >Tailwind (Latest Version)</a
                   >
                 </p>
               </div>
@@ -279,29 +193,52 @@
           </div>
 
           <div class="col-md-4 col-lg-3">
-            <div class="card" style="width: 18rem">
-              <a href="https://getbootstrap.com/docs/5.3/" target="_blank">
+            <div class="card  h-100" style="width: 18rem">
+              <a href="https://tailwindcss.com/" target="_blank">
                 <img
-                  src="Images/Bootstrap Icon.JPG"
+                  src="Images/TailwindIcon.png"
                   class="card-img-top"
-                  alt="Bootstrap Logo"
+                  alt="Bootstrap Logo" height="200px"
+                  width="200px"
               /></a>
 
               <div class="card-body">
                 <p class="card-text">
                   <a
-                    href="https://getbootstrap.com/docs/5.3/"
+                    href="https://tailwindcss.com/"
                     target="_blank"
                     class="text-dark"
-                    >Bootstrap (Latest Version)</a
+                    >Tailwind (Latest Version)</a
                   >
                 </p>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
+
+          <div class="col-md-4 col-lg-3">
+            <div class="card  h-100" style="width: 18rem">
+              <a href="https://tailwindcss.com/" target="_blank">
+                <img
+                  src="Images/TailwindIcon.png"
+                  class="card-img-top"
+                  alt="Bootstrap Logo" height="200px"
+                  width="200px"
+              /></a>
+
+              <div class="card-body">
+                <p class="card-text">
+                  <a
+                    href="https://tailwindcss.com/"
+                    target="_blank"
+                    class="text-dark"
+                    >Tailwind (Latest Version)</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+
+
 
     <div id="about" class="content">
       <h1>Design Tools</h1>
