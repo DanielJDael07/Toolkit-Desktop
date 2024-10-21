@@ -6,7 +6,7 @@
 }
 
 body.light-mode {
-  --bg-color: #333;
+  --bg-color: #333333;
   --text-color: #f0f0f0;
   --link-color: #9acd32;
 }
@@ -23,8 +23,9 @@ body.light-mode {
   border-radius: 20px;
   background: #4b4949;
   border-radius: 20px;
-  background: #565353;
+ 
   box-shadow: inset 5px -5px 10px #4f4c4c, inset -5px 5px 10px #5d5a5a;
+
 }
 
 body {
